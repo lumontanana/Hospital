@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Historial Médico</title>
+</head>
+<body>
+<h1>Buscar Historial Médico</h1>
+<form action="/history" method="post">
+    <label for="patientName">Nombre del Paciente:</label>
+    <input type="text" id="patientName" name="patientName"/>
+    <button type="submit">Buscar</button>
+</form>
+<pre th:text="${history}"></pre> <!-- Mostrar historial médico -->
+</body>
+</html>

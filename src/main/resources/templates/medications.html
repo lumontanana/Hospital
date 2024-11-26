@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Medicamentos</title>
+</head>
+<body>
+<h1>Lista de Medicamentos</h1>
+
+<!-- Formulario de búsqueda -->
+<form action="/medications/search" method="get">
+    <input type="text" name="name" placeholder="Buscar por nombre">
+    <button type="submit">Buscar</button>
+</form>
+
+<!-- Tabla de medicamentos -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Dosificacion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterar sobre la lista de medicamentos -->
+    <tr th:each="medication : ${medications}">
+        <td th:text="${medication.id}"></td>
+        <td th:text="${medication.name}"></td>
+        <td th:text="${medication.description}"></td>
+        <td th:text="${medication.dosage}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

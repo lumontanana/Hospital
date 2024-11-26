@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Búsqueda de Enfermedades</title>
+</head>
+<body>
+<h1>Búsqueda de Enfermedades</h1>
+<form action="/diseases" method="post">
+    <label for="diseaseName">Nombre de la Enfermedad:</label>
+    <input type="text" id="diseaseName" name="diseaseName"/>
+    <button type="submit">Buscar</button>
+</form>
+<pre th:text="${diseaseInfo}"></pre> <!-- Mostrar información de la enfermedad -->
+</body>
+</html>

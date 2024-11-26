@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buscar Pacientes</title>
+</head>
+<body>
+<h1>Buscar Pacientes</h1>
+<form action="/patients" method="post">
+    <label for="patientName">Nombre del Paciente:</label>
+    <input type="text" id="patientName" name="patientName"/>
+    <button type="submit">Buscar</button>
+</form>
+<p th:text="${patientInfo}"></p> <!-- Mostrar información del paciente -->
+</body>
+</html>

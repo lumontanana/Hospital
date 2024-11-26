@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Disease {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
