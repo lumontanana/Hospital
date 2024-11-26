@@ -22,7 +22,4 @@ public class Inform {
     @ManyToOne
     @JoinColumn(name = "disease_id")
     private Disease disease;
-
-
-
 }

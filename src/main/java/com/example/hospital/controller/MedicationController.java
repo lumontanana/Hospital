@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -22,7 +23,10 @@ public class MedicationController {
         return "medications";
     }
 
-    public List<Medication> searchMedications(String name) {
-        return medicationService.findByName(name);
+    @GetMapping("/medications/search")
+    public String searchMedications(@RequestParam String name, Model model) {
+        List<Medication> medications = medicationService.findByName(name);
+        model.addAttribute("medications", medications);
+        return "medications";
     }
 }

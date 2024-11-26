@@ -20,3 +20,12 @@ CREATE TABLE inform (
                         CONSTRAINT fk_medication FOREIGN KEY (medication_id) REFERENCES medication (id),
                         CONSTRAINT fk_disease FOREIGN KEY (disease_id) REFERENCES disease (id)
 );
+CREATE TABLE patient (
+                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                         name VARCHAR(100) NOT NULL,
+                         age INT,
+                         gender ENUM('M', 'F', 'O') NOT NULL,
+                         address VARCHAR(255),
+                         inform_id BIGINT,
+                         CONSTRAINT fk_inform FOREIGN KEY (inform_id) REFERENCES inform (id)
+);

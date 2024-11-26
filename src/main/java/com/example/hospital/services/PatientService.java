@@ -19,4 +19,8 @@ public class PatientService {
     public List<Patient> findAll() {
         return patientRepository.findAll();
     }
+
+    public List<Patient> findByName(String name) {
+        return patientRepository.findByName(name);
+    }
 }

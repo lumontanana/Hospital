@@ -19,4 +19,8 @@ public class InformService {
     public List<Inform> findAll() {
         return informRepository.findAll();
     }
+
+    public Inform findById(Long id) {
+        return informRepository.findById(id).orElse(null);
+    }
 }

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -20,10 +21,13 @@ public class DiseaseController {
     public String getAllDiseases(Model model) {
         List<Disease> medications = diseaseService.findAll();
         model.addAttribute("diseases", medications);
-        return "medications";
+        return "diseases";
     }
 
-    public List<Disease> gerDiseaseByName(String name) {
-        return diseaseService.findByName(name);
+    @GetMapping("/diseases/search")
+    public String gerDiseaseByName(@RequestParam String name, Model model) {
+        List<Disease> medications = diseaseService.findByName(name);
+        model.addAttribute("diseases", medications);
+        return "diseases";
     }
 }
