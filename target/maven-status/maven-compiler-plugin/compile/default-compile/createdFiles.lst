@@ -1,0 +1,17 @@
+com\example\hospital\model\Inform.class
+com\example\hospital\repositories\InformRepository.class
+com\example\hospital\repositories\DiseaseRepository.class
+com\example\hospital\repositories\PatientRepository.class
+com\example\hospital\repositories\MedicationRepository.class
+com\example\hospital\HospitalApplication.class
+com\example\hospital\services\InformService.class
+com\example\hospital\controller\PatientController.class
+com\example\hospital\controller\DiseaseController.class
+com\example\hospital\services\PatientService.class
+com\example\hospital\services\DiseaseService.class
+com\example\hospital\controller\MedicationController.class
+com\example\hospital\model\Patient.class
+com\example\hospital\controller\InformController.class
+com\example\hospital\model\Disease.class
+com\example\hospital\services\MedicationService.class
+com\example\hospital\model\Medication.class

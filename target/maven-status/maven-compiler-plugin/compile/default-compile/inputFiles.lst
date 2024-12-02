@@ -1,0 +1,17 @@
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\controller\DiseaseController.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\controller\InformController.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\controller\MedicationController.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\controller\PatientController.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\HospitalApplication.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\model\Disease.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\model\Inform.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\model\Medication.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\model\Patient.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\repositories\DiseaseRepository.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\repositories\InformRepository.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\repositories\MedicationRepository.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\repositories\PatientRepository.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\services\DiseaseService.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\services\InformService.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\services\MedicationService.java
+C:\Users\lucia\IdeaProjects\Hospital\src\main\java\com\example\hospital\services\PatientService.java
